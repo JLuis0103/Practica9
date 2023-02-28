@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#7a4385 ;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #9d82a7;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #ffffff;
+    color: #9d82a7;
+}
+.aside {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img/HuTao.jpg);
+    background-position: center;
+    height: 500px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #7a4385;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .aside {
+         background-image: url(img/Ichigo.jpeg);
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Practica 9</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="https://jluis0103.github.io/PracticasUnidad1/">Pr&aacute;ctica 1</a></li>
+    <li><a href="https://jluis0103.github.io/LineaDeTiempo/">Pr&aacute;ctica 2</a></li>
+    <li><a href="https://jluis0103.github.io/Practica3/">Pr&aacute;ctica 3</a></li>
+    <li><a href="https://jluis0103.github.io/Practica4/">Pr&aacute;ctica 4</a></li>
+    <li><a href="https://jluis0103.github.io/Practica5/">Pr&aacute;ctica 5</a></li>
+    <li><a href="https://jluis0103.github.io/Practica6/">Pr&aacute;ctica 6</a></li>
+    <li><a href="https://jluis0103.github.io/Practica-7/">Pr&aacute;ctica 7</a></li>
+    <li><a href="https://jluis0103.github.io/Practica8/">Pr&aacute;ctica 8</a></li>
+  </ul>
+</div>
+
+<div class="col-6">
+  <h1>Mi CV</h1>
+  <p>
+    <div style="text-align: center;">
+      <video src="media/mivideo.mp4" controls height="352" width="600"></video>
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1676945271680!6m8!1m7!1swyUa5bqZsg3dAf8s5DwcNQ!2m2!1d18.88897833382955!2d-96.95741544391088!3f132.36842457697895!4f-19.12807536594606!5f0.4000000000000002" width="600" height="352" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <br>
+  <div>
+      <fieldset>
+          <h3>Mis Datos</h3><br>
+          <h2>Datos Personales</h2><br>
+          <ul>
+              <li>Nombre completo: <label style="font-weight: bold;">Jose Luis Ramirez Alfonso</label></li>
+              <li>Fecha de Nacimiento: <label style="font-weight: bold;">03/01/2002</label></li>
+              <li>Lugar de Nacimiento: <label style="font-weight: bold;">C&oacute;rdoba, Ver.</label></li>
+          </ul><br>
+          <h2>Formaci&oacute;n Acad&eacute;mica</h2><br>
+          <ul>
+              <li>2009 - 2014: <label style="font-weight: bold;">C&eacute;ntro Escolar M&eacute;xico</label></li>
+              <li>2015 - 2017: <label style="font-weight: bold;">E.S.B.A.O.</label></li>
+              <li>2017 - 2020: <label style="font-weight: bold;">E.S.B.A.O.</label></li>
+          </ul><br>
+          <h2>Experiencia Laboral</h2><br>
+          <ul>
+              <li>2020: <label style="font-weight: bold;">Capturista</label></li>
+              <li>2021: <label style="font-weight: bold;">Administrador de Base de Datos</label></li>
+              <li>2022: <label style="font-weight: bold;">Programador Web</label></li>
+          </ul>
+        </fieldset>
+  </div>
+  </p>
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Cambiar el tama&ntilde;o de la ventana del navegador para ver c&oacute;mo responde el contenido al redimensionamiento.</p>
+</div>
+
+</body>
+</html>
